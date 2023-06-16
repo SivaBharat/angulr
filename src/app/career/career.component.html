@@ -1,0 +1,8 @@
+
+<span class="p-float-label">
+   Employee Name: <input type="text" id="username" (keyup.enter)="name=$any($event.target).value" (keyup.esc)="name=''" />
+    <p>Employee name : {{name}}</p>
+    Department:<input type="text" (keyup.enter)="department=$any($event.target).value" (keyup.esc)="department=''"/>
+    <p>Department:{{department}}</p>
+</span>
+<router-outlet></router-outlet>

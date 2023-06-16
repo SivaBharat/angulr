@@ -1,0 +1,21 @@
+<p-button label="click"(click)="click()">{{msg}}</p-button><br><br>
+<p-button (mouseover)="mouseover()">mouse over  me!{{msg}}</p-button><br><br>
+<p-button (mouseenter)="mouseenter()">mouse enter me!{{msg}}</p-button><br><br>
+<p-button (dblclick)="dblclick()">double click me!{{msg}}</p-button><br><br>
+<p-button (mouseleave)="mouseleave()">mouse leave me!{{msg}}</p-button><br><br>
+<p-button (mousedown)="mousedown()">mouse down me!{{msg}}</p-button><br><br>
+<p-button (mouseup)="mouseup()">mouseup me!{{msg}}</p-button><br><br>
+<p-button (mouseup)="drag()">drag me!{{msg}}</p-button><br><br>
+
+<div class="container">
+  <div class="row row-cols-4">
+<div class="card" style="width: 18rem;" *ngFor="let data of product" >
+    <img src="{{data.img}}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Product Name:{{data.product}}</h5>
+      <p class="card-text">Cost:{{data.cost}}</p>
+      <a href="#" class="btn btn-primary">Order Now</a>
+    </div>
+  </div>
+</div>
+</div>
