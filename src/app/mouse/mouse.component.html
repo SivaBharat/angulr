@@ -19,3 +19,47 @@
   </div>
 </div>
 </div>
+<!--Trainee35-->
+
+<div class="container bg-dark text-light">
+  <h3>Trainees Record</h3>
+  <div class="row align-items-start" *ngFor="let batch of batch">
+    <div class="col">
+     Name:{{batch.Name}}
+    </div>
+    <div class="col">
+      Age:{{batch.Age}}
+    </div>
+    <div class="col">
+      Gender:{{batch.Gender}}
+    </div>
+  </div></div>
+
+  <div class="container bg-dark text-light">
+  <div class="row align-items-start"  *ngFor="let batch of batch" [ngSwitch]="batch.Gender">
+    <div class="col" *ngSwitchCase="'Male'">
+      <p style="color: rgb(0, 255, 81)">Male Trainee:</p>
+    </div>
+    <div class="col" *ngSwitchCase="'Female'">
+      <p style="color: red">Female Trainee:</p>
+    </div>
+    <div class="col" *ngSwitchDefault>
+      <p style="color: gray">Other Gender:</p>
+    </div>
+    
+    <p class="col">Name: {{ batch.Name }}</p>
+    <p class="col">Age: {{ batch.Age }}</p>
+    <p class="col">Gender: {{ batch.Gender }}</p>
+  </div>
+  </div>
+
+  <!--user details-->
+  <div class="container">
+    <img src="assets/img/avatar.jpg" alt="User Image" (click)="toggleDetails()">
+    <div *ngIf="showDetails">
+      <p>Name: {{ user.name }}</p>
+      <p>Email: {{ user.email }}</p>
+      <p>Age: {{ user.age }}</p>
+    </div>
+  </div>
+  

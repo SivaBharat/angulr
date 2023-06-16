@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./create.component.css']
 })
 export class CreateComponent {
+  color="white"
 emplist:Employee[]=[
   {
   EmpName:"Siva",

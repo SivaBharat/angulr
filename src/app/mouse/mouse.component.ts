@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import * as data from 'src/assets/json/product.json';
+import * as batch from 'src/assets/json/batch.json';
 
 @Component({
   selector: 'app-mouse',
@@ -40,5 +41,22 @@ export class MouseComponent {
     this.msg = "mouse drags me";
     return this.msg;
   }
+
+  //Display product details
 product:any=(data as any).default 
+
+//Display trainee details accordingly gender
+batch:any=(batch as any).default
+
+//user details with toggle effect
+user = {
+  name: 'siva',
+  email: 'siva@gmail.com',
+  age: 21
+};
+showDetails = false;
+
+toggleDetails() {
+  this.showDetails = !this.showDetails;
+}
 }
