@@ -15,6 +15,8 @@ import { InputTextModule } from 'primeng/inputtext';
 import { MouseComponent } from './mouse/mouse.component';
 import { CreateComponent } from './create/create.component';
 import { ButtonModule } from 'primeng/button';
+import { ParentComponent } from './parent/parent.component';
+import { ChildComponent } from './child/child.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,6 +24,8 @@ import { ButtonModule } from 'primeng/button';
     CareerComponent,
     MouseComponent,
     CreateComponent,
+    ParentComponent,
+    ChildComponent,
     
   ],
   imports: [

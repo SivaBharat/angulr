@@ -108,10 +108,12 @@ export class AppComponent implements OnInit {
                     {
                         label: 'Edit',
                         icon: 'pi pi-fw pi-pencil',
+                        routerLink:'parent',
                         items: [
                             {
                                 label: 'Save',
-                                icon: 'pi pi-fw pi-calendar-plus'
+                                icon: 'pi pi-fw pi-calendar-plus',
+                                routerLink:'child',
                             },
                             {
                                 label: 'Delete',
