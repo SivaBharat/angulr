@@ -17,6 +17,9 @@ import { CreateComponent } from './create/create.component';
 import { ButtonModule } from 'primeng/button';
 import { ParentComponent } from './parent/parent.component';
 import { ChildComponent } from './child/child.component';
+import { TemplateComponent } from './template/template.component';
+import { ReactiveComponent } from './reactive/reactive.component';
+import { FormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,6 +29,8 @@ import { ChildComponent } from './child/child.component';
     CreateComponent,
     ParentComponent,
     ChildComponent,
+    TemplateComponent,
+    ReactiveComponent,
     
   ],
   imports: [
@@ -37,7 +42,8 @@ import { ChildComponent } from './child/child.component';
     BrowserAnimationsModule,
     ImageModule,
     InputTextModule,
-    ButtonModule
+    ButtonModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

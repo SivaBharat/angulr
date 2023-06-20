@@ -18,10 +18,12 @@ export class AppComponent implements OnInit {
                     {
                         label: 'New',
                         icon: 'pi pi-fw pi-plus',
+                        routerLink:'template',
                         items: [
                             {
                                 label: 'Bookmark',
-                                icon: 'pi pi-fw pi-bookmark'
+                                icon: 'pi pi-fw pi-bookmark',
+                                routerLink:'reactive'
                             },
                             {
                                 label: 'Video',
