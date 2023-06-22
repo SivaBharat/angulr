@@ -20,6 +20,16 @@ import { ChildComponent } from './child/child.component';
 import { TemplateComponent } from './template/template.component';
 import { ReactiveComponent } from './reactive/reactive.component';
 import { FormsModule } from '@angular/forms';
+import { ProductsComponent } from './products/products.component';
+import { MenComponent } from './products/men/men.component';
+import { WomenComponent } from './products/women/women.component';
+import { KidsComponent } from './products/kids/kids.component';
+import { MenclothesComponent } from './products/men/menclothes/menclothes.component';
+import { MenfootwearComponent } from './products/men/menfootwear/menfootwear.component';
+import { WomenclothesComponent } from './products/women/womenclothes/womenclothes.component';
+import { WomenfootwearComponent } from './products/women/womenfootwear/womenfootwear.component';
+import { KidsclothesComponent } from './products/kids/kidsclothes/kidsclothes.component';
+import { KidsfootwearComponent } from './products/kids/kidsfootwear/kidsfootwear.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,6 +41,16 @@ import { FormsModule } from '@angular/forms';
     ChildComponent,
     TemplateComponent,
     ReactiveComponent,
+    ProductsComponent,
+    MenComponent,
+    WomenComponent,
+    KidsComponent,
+    MenclothesComponent,
+    MenfootwearComponent,
+    WomenclothesComponent,
+    WomenfootwearComponent,
+    KidsclothesComponent,
+    KidsfootwearComponent,
     
   ],
   imports: [
